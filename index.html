@@ -6,10 +6,10 @@
     <title>My Showcase Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
         }
 
         h1 {
@@ -29,6 +29,38 @@
             border-radius: 8px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .showcase-item:hover {
+            transform: scale(1.05);
+        }
+
+        .design-content {
+            text-align: center;
+            color: #555;
+        }
+
+        .design-content {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .action-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .action-button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
@@ -38,37 +70,27 @@
     <div class="showcase-container">
         <div class="showcase-item">
             <h2>Design 1</h2>
-            <div class="showcase-item">
-                <h2>Design 1</h2>
-        <div class="design-content">
-        <img src="design1-image.jpg" alt="Design 1 Image">
-        <p>This is a sample HTML and CSS design showcasing Design 1. You can add any content, images, or other elements here to represent your design.</p>
-        <button class="action-button">Click me</button>
-    </div>
-</div>
-
+            <div class="design-content">
+                <p>This is a sample HTML and CSS design showcasing Design 1. You can add any content, images, or other elements here to represent your design.</p>
+                <button class="action-button">Click me</button>
+            </div>
         </div>
 
         <div class="showcase-item">
             <h2>Design 2</h2>
-            <div class="showcase-item">
-    <h2>Design 2</h2>
-    <div class="design-content">
-        <h3>Feature-rich Web App</h3>
-        <p>This design represents a feature-rich web application with interactive elements. Customize the content below to showcase the key features of your design.</p>
+            <div class="design-content">
+                <h3>Feature-rich Web App</h3>
+                <p>This design represents a feature-rich web application with interactive elements. Customize the content below to showcase the key features of your design.</p>
 
-        <ul>
-            <li>Responsive layout</li>
-            <li>Interactive charts</li>
-            <li>User-friendly interface</li>
-        </ul>
+                <ul>
+                    <li>Responsive layout</li>
+                    <li>Interactive charts</li>
+                    <li>User-friendly interface</li>
+                </ul>
 
-        <button class="action-button">Try it now</button>
-    </div>
-</div>
-
+                <button class="action-button">Try it now</button>
+            </div>
         </div>
-
     </div>
 </body>
 </html>
